@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Launch a simple EC2 instance using CloudFormation
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0c02fb55956c7d316   # Amazon Linux 2 AMI in us-east-1
+      InstanceType: t2.micro
+      KeyName: my-key-pair             # Replace with your EC2 key pair name
+      Tags:
+        - Key: Name
+          Value: MyFirstCFNInstance
