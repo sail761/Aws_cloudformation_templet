@@ -5,9 +5,9 @@ Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ami-0c02fb55956c7d316   # Amazon Linux 2 AMI in us-east-1
+      ImageId: ami-0cbbe2c6a1bb2ad63 # User's specified AMI ID
       InstanceType: t2.micro
-      KeyName: my-key-pair             # Replace with your EC2 key pair name
+      KeyName: Jenkins-key # User's key pair name
       Tags:
         - Key: Name
           Value: MyFirstCFNInstance
